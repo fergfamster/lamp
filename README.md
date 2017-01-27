@@ -29,6 +29,8 @@ Test your deployment:
 
 Hello world!
 
+You can also find the phpmyadmin page by going to localhost:8181
+
 
 Loading your custom PHP application
 -----------------------------------
