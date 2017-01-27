@@ -3,4 +3,12 @@ lamp:
   ports:
     - 80:80
     - 3306:3306
-    
+phpmyadmin:
+  image: corbinu/docker-phpmyadmin
+  links:
+    - weddingnookdev:mysql
+  ports:
+    - 8181:80
+  environment:
+    MYSQL_USERNAME: root
+    MYSQL_ROOT_PASSWORD: examplepass
