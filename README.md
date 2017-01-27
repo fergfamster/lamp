@@ -94,6 +94,9 @@ In this case, `47nnf4FweaKu` is the password allocated to the `admin` user.
 You can then connect to MySQL:
 
 	 mysql -uadmin -p47nnf4FweaKu
+	 
+This may not work, to ssh to your container do the following:
+	docker exec -t -i container_name /bin/bash
 
 Remember that the `root` user does not allow connections from outside the container -
 you should use this `admin` user instead!
